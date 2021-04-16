@@ -4,4 +4,17 @@
 @import "navbar";
 @import "banner";
 
+.my-lists {
+  margin-top: 50px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+  padding: 40px 0px 0px 0px;
+}
+
 

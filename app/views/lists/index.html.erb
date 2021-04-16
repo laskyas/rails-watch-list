@@ -6,10 +6,12 @@
 </div>
 
 <div class="container">
-  <h1>My lists</h1>
-  <ul>
-    <% @lists.each do |list| %>
-    <li><%= link_to list.name, list_path(list.id)%></li>
-    <% end %>
-  </ul>
+  <div class="my-lists">
+    <h1>My lists</h1>
+    <ul>
+      <% @lists.each do |list| %>
+       <li><%= link_to list.name, list_path(list.id)%></li>
+      <% end %>
+    </ul>
+  </div>
 </div>
