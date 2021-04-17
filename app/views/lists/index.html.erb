@@ -8,10 +8,10 @@
 <div class="container">
   <div class="my-lists">
     <h1>My lists</h1>
-    <ul>
+    <div id="card-lists">
       <% @lists.each do |list| %>
-       <li><%= link_to list.name, list_path(list.id)%></li>
+       <div class="card"><%= link_to list.name, list_path(list.id)%></div>
       <% end %>
-    </ul>
+    </div>
   </div>
 </div>
