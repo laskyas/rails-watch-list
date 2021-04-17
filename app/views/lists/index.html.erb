@@ -5,13 +5,17 @@
   </div>
 </div>
 
+
+
 <div class="container">
   <div class="my-lists">
     <h1>My lists</h1>
     <div id="card-lists">
       <% @lists.each do |list| %>
       <div id="bookmark">
-        <div class="card-pic" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()"></div>
+        <div class="card-pic" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3))">
+          <%= cl_image_tag("niodssjlidyhwt0fbtsg", width: 400, height: 300, crop: :fill) %>
+        </div>
         <div class="card-body">
           <h3><%= link_to list.name, list_path(list.id)%></h3>
         </div>
