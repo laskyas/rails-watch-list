@@ -10,8 +10,14 @@
     <h1>My lists</h1>
     <div id="card-lists">
       <% @lists.each do |list| %>
-       <div class="card"><%= link_to list.name, list_path(list.id)%></div>
+      <div id="bookmark">
+        <div class="card-pic" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url()"></div>
+        <div class="card-body">
+          <h3><%= link_to list.name, list_path(list.id)%></h3>
+        </div>
+      </div>
       <% end %>
     </div>
   </div>
+
 </div>

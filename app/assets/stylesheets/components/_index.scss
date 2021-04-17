@@ -38,8 +38,9 @@ li {
 #card-lists {
   display: flex;
   justify-content: space-evenly;
+  flex-flow: row wrap;
+  margin: 50px 0px;
 }
-
 
 
 .list-details {
